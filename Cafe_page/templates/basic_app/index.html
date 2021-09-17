@@ -1,0 +1,42 @@
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+{% load static %}
+
+<div id="index_con1" class="container">
+
+  <div class="jumbotron" style="background: url({% static 'images/2.jpg' %})">
+    <h1>Location: 19 Holyhead Rd, Bangor LL57 2EU</h1>
+    </div>
+
+    <h1 style="color:black">Create an account and enjoy 20% off then you order for colection!!</h1>
+
+<div class="jumbotron" id="index_con2">
+    <h2>Opening times:</h2>
+    <ul>
+      <li>Monday: 10am - 6:30pm </li>
+      <li>Tuesday: 10am - 6:30pm</li>
+      <li>Wednesday: 10am - 5pm</li>
+      <li>Thursday: 10am - 6:30pm</li>
+      <li>Friday: 10am - 6:30pm</li>
+      <li>Saturday: 11am - 4pm</li>
+      <li>Sunday: 11am - 3pm</li>
+    </ul>
+</div>
+
+</div>
+
+
+
+<!-- <div id="index_con1"class="container" >
+  <div class="jumbotron" style="background: url({% static 'images/4.jpg' %})">
+    <h1>Welcome to:</h1>
+    {% if user.is_authenticated %}
+        <h2>The Pancake Shop,  {{ user.username }}!</h2>
+        <h3>Please use the nav-bar to navigate through our website!</h3>
+    {% else %}
+        <h2>The Pancake Shop!</h2>
+    {% endif %}
+  </div>
+</div> -->
+
+{% endblock %}

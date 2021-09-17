@@ -1,0 +1,12 @@
+#index_con1{
+  color:orange;
+  font-weight:bold;
+  font-style:italic
+}
+
+#index_con2{
+  display: flex;
+  justify-content: center;
+
+
+}
